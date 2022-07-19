@@ -5,9 +5,6 @@ export function SignIn(){
         <>
             <View>
                 <Text>Olá, Sapup3</Text>
-                <Text>Skater</Text>
-                <Text>Skater</Text>
-                <Text>Skater 1999</Text>
             </View>
         </>
     )
