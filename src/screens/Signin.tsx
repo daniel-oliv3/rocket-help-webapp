@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native';
 
-function Signin(){
+function SignIn(){
     return (
             <View>
                 <Text>Olá, Sapup3</Text>
