@@ -35,6 +35,7 @@ expo init my_app
 
 **Criar arquivo tsconfig.json na raiz do projeto**
 - tsconfig.json
+- Modificar a extenção do arquivo `App.js` para **App.tsx**
 
 ## Roda a aplicação
 ```
@@ -45,8 +46,22 @@ expo start
 - http://localhost:19002
 
 
+## NativeBase
+- instalação do NativeBase
+- Site - https://nativebase.io/
 
+**Npm**
+```
+npm install native-base
+```
 
+```
+expo install react-native-svg
+```
+
+```
+expo install react-native-safe-area-context
+```
 
 
 
