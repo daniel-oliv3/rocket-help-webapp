@@ -9,7 +9,9 @@
 - **Ferramentas**
     - `NodeJS` - https://nodejs.org/en/
     - `Expo CLI` - 
-    - `Expo Go` - 
+    - `Expo Go` -
+
+- Com essas ferramentas, basta você instalar a CLI do Expo globalmente pelo **npm** (ou **Yarn**, o que você preferir): 
 
 ## Npm
 ```
@@ -26,9 +28,10 @@ yarn global add expo-cli
 expo --version
 ```
 
-
-
-
+**Criação do projeto**
+```
+expo init my_app
+```
 
 
 
