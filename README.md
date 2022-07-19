@@ -8,8 +8,8 @@
 ## Configurando Ambiente.
 - **Ferramentas**
     - `NodeJS` - https://nodejs.org/en/
-    - `Expo CLI` - 
-    - `Expo Go` -
+    - `Expo CLI` - https://docs.expo.dev/workflow/expo-cli/
+    - `Expo Go` - https://expo.dev/client
 
 - Com essas ferramentas, basta você instalar a CLI do Expo globalmente pelo **npm** (ou **Yarn**, o que você preferir): 
 
@@ -33,8 +33,16 @@ expo --version
 expo init my_app
 ```
 
+**Criar arquivo tsconfig.json na raiz do projeto**
+- tsconfig.json
 
+## Roda a aplicação
+```
+expo start
+```
 
+- **QRCODE**
+- http://localhost:19002
 
 
 
