@@ -1,3 +1,5 @@
+import { NativeBaseProvider } from 'native-base';
+
 import { SignIn } from './src/screens/SignIn';
 
 /* APP */

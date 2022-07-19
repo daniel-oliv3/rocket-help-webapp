@@ -17,6 +17,7 @@
 ```
 npm install -g expo-cli
 ```
+**Ou**
 
 ## Yarn
 ```
