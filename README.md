@@ -5,10 +5,11 @@
 
 
 #### 2 - Criação do projeto.
-**Configurando Ambiente**
-- NodeJS - https://nodejs.org/en/
-- Expo CLI - 
-- Expo Go - 
+## Configurando Ambiente.
+- **Ferramentas**
+    - `NodeJS` - https://nodejs.org/en/
+    - `Expo CLI` - 
+    - `Expo Go` - 
 
 ## Npm
 ```
@@ -68,7 +69,7 @@ expo --version
 
 
 - By: **Daniel Oliveira**
-  - Instagram - https://www.instagram.com/danieloliv3/
-  - Facebook - https://web.facebook.com/danielsapup3/
-  - Twitter - https://twitter.com/danielsapup3/
-  - Linkedin - https://www.linkedin.com/in/danielsapup3/
+  - `Instagram` - https://www.instagram.com/danieloliv3/
+  - `Facebook` - https://web.facebook.com/danielsapup3/
+  - `Twitter` - https://twitter.com/danielsapup3/
+  - `Linkedin` - https://www.linkedin.com/in/danielsapup3/
