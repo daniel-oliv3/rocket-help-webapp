@@ -1,26 +1,26 @@
 ## Rocket Help.
-
+#### 1 - React Native.
 **Figma do projeto**
 - Figma - https://www.figma.com/community/file/1130846653327904117
 - Material de apoio - https://efficient-sloth-d85.notion.site/Ignite-Lab-03-606aca4553fc4acc90505eae21521403
 
-## 2 - 
+#### 2 - Criação do projeto.
 **Configurando Ambiente**
 - NodeJS - https://nodejs.org/en/
 - Expo CLI - 
 - Expo Go - 
 
-- Npm
+## Npm
 ```
 npm install -g expo-cli
 ```
 
-- Yarn
+## Yarn
 ```
 yarn global add expo-cli
 ```
 
-- Para verificar se a instalação ocorreu com sucesso, execute o comando abaixo:
+**Para verificar se a instalação ocorreu com sucesso, execute o comando abaixo:**
 ```
 expo --version
 ```
