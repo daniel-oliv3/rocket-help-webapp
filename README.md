@@ -109,6 +109,15 @@ module.exports = (() => {
 - atalho para criação do component: **nbc + tab**
 
 
+## Phosphor Icon.
+- Site - https://phosphoricons.com/
+
+**Phosphor Icon React Native**
+- Site - https://github.com/duongdev/phosphor-react-native
+
+```
+npm install --save phosphor-react-native
+```
 
 
 
