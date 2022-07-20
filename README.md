@@ -106,7 +106,7 @@ module.exports = (() => {
   - `R component`
 
 
-- atalho para criação do component: **nbc + tab**
+- atalho para criação do component: **nbc + tab** "native nase component"
 
 
 ## Phosphor Icon.
