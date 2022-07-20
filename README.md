@@ -1,10 +1,10 @@
 ## Rocket Help.
-#### 1 - React Native.
+### 1 - React Native.
 **Figma do projeto**
 - Figma - https://www.figma.com/community/file/1130846653327904117
 
 
-#### 2 - Criação do projeto.
+### 2 - Criação do projeto.
 ## Configurando Ambiente.
 - **Ferramentas**
     - `NodeJS` - https://nodejs.org/en/
@@ -36,7 +36,7 @@ expo init my_app
 
 **Criar arquivo tsconfig.json na raiz do projeto**
 - tsconfig.json
-- Modificar a extenção do arquivo `App.js` para **App.tsx**
+- Modificar a extenção do arquivo `App.js` para `App.tsx`
 
 ## Roda a aplicação
 ```
@@ -64,11 +64,12 @@ expo install react-native-svg
 expo install react-native-safe-area-context
 ```
 
+## Expo Goggle Fonts
+- Site - https://docs.expo.dev/guides/using-custom-fonts/
 
-
-
-
-
+```
+expo install expo-font @expo-google-fonts/roboto
+```
 
 
 
