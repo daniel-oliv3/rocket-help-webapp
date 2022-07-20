@@ -1,6 +1,6 @@
 import { Input as NativeBaseInput, IInputProps } from "native-base";
 
-
+/* Input */
 export function Input({ ...rest }: IInputProps ) {
     return (
         <NativeBaseInput 

@@ -7,7 +7,7 @@ import Logo from '../assets/logo_primary.svg';
 import { Input } from '../components/Input';
 import { Button } from '../components/Button';
 
-/* Principal */
+/* SignIn/Entrar */
 export function SignIn(){
 
     const [name, setName] = useState('');

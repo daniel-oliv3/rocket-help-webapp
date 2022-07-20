@@ -4,6 +4,7 @@ type Props = IButtonProps & {
     title: string;
 }
 
+/* Botão */
 export function Button({ title, ...rest }: Props) {
   return (
     <ButtonNativeBase 
