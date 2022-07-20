@@ -71,8 +71,35 @@ expo install react-native-safe-area-context
 expo install expo-font @expo-google-fonts/roboto
 ```
 
+## SVG Transformer React Native
+- Site - https://github.com/kristerkari/react-native-svg-transformer
 
+```
+npm i react-native-svg-transformer --save-dev
+```
 
+- **Substituir** o codigo do arquivo `metro.config.js` por:
+```JS
+const { getDefaultConfig } = require("expo/metro-config");
+
+module.exports = (() => {
+  const config = getDefaultConfig(__dirname);
+
+  const { transformer, resolver } = config;
+
+  config.transformer = {
+    ...transformer,
+    babelTransformerPath: require.resolve("react-native-svg-transformer"),
+  };
+  config.resolver = {
+    ...resolver,
+    assetExts: resolver.assetExts.filter((ext) => ext !== "svg"),
+    sourceExts: [...resolver.sourceExts, "svg"],
+  };
+
+  return config;
+})();
+```
 
 
 
