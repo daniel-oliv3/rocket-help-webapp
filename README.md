@@ -64,7 +64,7 @@ expo install react-native-svg
 expo install react-native-safe-area-context
 ```
 
-## Expo Goggle Fonts
+## Expo Google Fonts
 - Site - https://docs.expo.dev/guides/using-custom-fonts/
 
 ```
