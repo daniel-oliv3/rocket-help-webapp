@@ -101,7 +101,12 @@ module.exports = (() => {
 })();
 ```
 
+**VSCode**
+- Extenção
+  - `R component`
 
+
+- atalho para criação do component: **nbc + tab**
 
 
 
