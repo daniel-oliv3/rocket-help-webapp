@@ -8,6 +8,12 @@ import { Filter } from '../components/Filter';
 
 export function Home() {
     const [statusSelected, setStatusSelected] = useState<'open' |'closed'>('open');
+    const [orders, setOrders] = useState([{
+        id: '123',
+        patrimony: '123456',
+        when: '18/07¹2022 as 10:00',
+        status: 'open'
+    }]);
 
     const { colors } = useTheme();
 
@@ -45,12 +51,15 @@ export function Home() {
                 type="open"
                 title="em andamento"
                 onPress={() => setStatusSelected('open')}
+                isActive={statusSelected === 'open'}
             />
 
 
             <Filter 
                 type="closed"
                 title="finalizado"
+                onPress={() => setStatusSelected('closed')}
+                isActive={statusSelected === 'closed'}
             />
         </HStack>
         </VStack>        
