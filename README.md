@@ -1,10 +1,11 @@
 ## Rocket Help.
-### 1 - React Native.
+### 1 - Conhecendo o projeto 
+## React Native.
 **Figma do projeto**
 - Figma - https://www.figma.com/community/file/1130846653327904117
 
 
-### 2 - Criação do projeto.
+### 2 - O início da especialização em React Native.
 ## Configurando Ambiente.
 - **Ferramentas**
     - `NodeJS` - https://nodejs.org/en/
@@ -119,10 +120,10 @@ module.exports = (() => {
 npm install --save phosphor-react-native
 ```
 
+### 3 - Estrutura visual e Navegação.
 
 
-
-
+### 4 - Integração com Firebase e finalização.
 
 
 
