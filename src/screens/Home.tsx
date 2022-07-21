@@ -3,6 +3,8 @@ import { SignOut } from 'phosphor-react-native';
 
 import Logo from '../assets/logo_secondary.svg';
 
+import { Filter } from '../components/Filter';
+
 export function Home() {
     const { colors } = useTheme();
 
@@ -34,12 +36,20 @@ export function Home() {
                     3
                 </Text>
             </HStack>
-        </VStack>
-
-        <HStack>
             
-        </HStack>
+            <HStack>
+            <Filter 
+                type="open"
+                title="em andamento"
+            />
 
+
+            <Filter 
+                type="closed"
+                title="finalizado"
+            />
+        </HStack>
+        </VStack>        
     </VStack>
   );
 }
