@@ -1,4 +1,4 @@
-import { HStack, VStack, IconButton, useTheme } from 'native-base';
+import { HStack, VStack, IconButton, useTheme, Text, Heading } from 'native-base';
 import { SignOut } from 'phosphor-react-native';
 
 import Logo from '../assets/logo_secondary.svg';
@@ -23,6 +23,21 @@ export function Home() {
                 icon={<SignOut size={26} color={colors.gray[300]} />}
             />
 
+        </HStack>
+
+        <VStack flex={1} px={6}>
+            <HStack w="full" mt={8} mb={4} justifyContent="space-between" alignItems="center">
+                <Heading color="gray.100">
+                    Meus chamados
+                </Heading>
+                <Text color="gray.200">
+                    3
+                </Text>
+            </HStack>
+        </VStack>
+
+        <HStack>
+            
         </HStack>
 
     </VStack>
