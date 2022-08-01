@@ -67,7 +67,7 @@ export function Home() {
             <FlatList 
                 data={orders}                 
                 keyExtractor={item => item.id}
-                renderItem={({ item }) => <Text>{item.patrimony}</Text>}
+                renderItem={({ item }) => <Text color="white">{item.status}</Text>}
             />
 
         </VStack>        
