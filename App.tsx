@@ -23,3 +23,11 @@ export default function App() {
 }
 
 
+
+/*
+    Autor: Daniel Oliveira
+    Email: danieloliveira.webmaster@gmail.com
+    Manaus/Amazonas
+    25/06/2022
+*/
+
