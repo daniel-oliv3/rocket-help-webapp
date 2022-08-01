@@ -1,4 +1,4 @@
-import { HStack, Text } from 'native-base';
+import { Box, HStack, Text, useTheme, VStack } from 'native-base';
 
 
 export type OrderProps = {
@@ -10,14 +10,33 @@ export type OrderProps = {
 
 
 type Props = {
-    
+    data: OrderProps;
 }
 
 
-export function Order() {
+export function Order({data, ...rest }: Props) {
+
+    const { colors } = useTheme();
+
+    const statusColor = data.status === 'open' ? colors.secondary[700] : colors.green[300];
+
   return (
-    <HStack>
-        <Text></Text>
+    <HStack
+        bg="gray.600"
+        mb={4}
+        alignItems="center"
+        justifyContent="space-between"
+        rounded="sm"
+        overflow="hidden"
+    >
+        <Box h="full" w={2} bg={statusColor} />
+
+        <VStack>
+            <Text color="white" fontSize="md">
+                Patrimônio {data.patrimony}
+            </Text>
+        </VStack>
+        
 
     </HStack>
   );
