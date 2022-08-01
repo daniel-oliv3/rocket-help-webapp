@@ -1,17 +1,18 @@
 import { useState } from 'react';
-import { HStack, VStack, IconButton, useTheme, Text, Heading } from 'native-base';
+import { HStack, VStack, IconButton, useTheme, Text, Heading, Fletlist, FlatList } from 'native-base';
 import { SignOut } from 'phosphor-react-native';
 
 import Logo from '../assets/logo_secondary.svg';
 
 import { Filter } from '../components/Filter';
+import { ItemClick } from 'native-base/lib/typescript/components/composites/Typeahead/useTypeahead/types';
 
 export function Home() {
     const [statusSelected, setStatusSelected] = useState<'open' |'closed'>('open');
     const [orders, setOrders] = useState([{
         id: '123',
         patrimony: '123456',
-        when: '18/07¹2022 as 10:00',
+        when: '18/07/2022 as 10:00',
         status: 'open'
     }]);
 
@@ -61,7 +62,14 @@ export function Home() {
                 onPress={() => setStatusSelected('closed')}
                 isActive={statusSelected === 'closed'}
             />
-        </HStack>
+            </HStack>
+
+            <FlatList 
+                data={orders}                 
+                keyExtractor={item => item.id}
+                renderItem={({ item }) => <Text>{item.patrimony}</Text>}
+            />
+
         </VStack>        
     </VStack>
   );
