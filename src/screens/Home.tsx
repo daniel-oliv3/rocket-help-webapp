@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { HStack, VStack, IconButton, useTheme, Text, Heading, FlatList } from 'native-base';
-import { SignOut } from 'phosphor-react-native';
+import { HStack, VStack, IconButton, useTheme, Text, Heading, FlatList, Center } from 'native-base';
+import { SignOut, ChatTeardropText } from 'phosphor-react-native';
 
 import Logo from '../assets/logo_secondary.svg';
 
@@ -11,56 +11,7 @@ import { Order, OrderProps } from '../components/Order';
 
 export function Home() {
     const [statusSelected, setStatusSelected] = useState<'open' |'closed'>('open');
-    const [orders, setOrders] = useState<OrderProps[]>([
-        {
-            id: '123',
-            patrimony: '123456',
-            when: '18/07/2022 as 10:00',
-            status: 'open'
-        },
-        {
-            id: '164',
-            patrimony: '654321',
-            when: '02/08/2022 as 16:13',
-            status: 'open'
-        },
-        {
-            id: '131',
-            patrimony: '123456',
-            when: '18/07/2022 as 10:00',
-            status: 'open'
-        },
-        {
-            id: '124',
-            patrimony: '654321',
-            when: '02/08/2022 as 16:13',
-            status: 'open'
-        },
-        {
-            id: '193',
-            patrimony: '123456',
-            when: '18/07/2022 as 10:00',
-            status: 'open'
-        },
-        {
-            id: '174',
-            patrimony: '654321',
-            when: '02/08/2022 as 16:13',
-            status: 'open'
-        },
-        {
-            id: '113',
-            patrimony: '123456',
-            when: '18/07/2022 as 10:00',
-            status: 'open'
-        },
-        {
-            id: '144',
-            patrimony: '654321',
-            when: '02/08/2022 as 16:13',
-            status: 'open'
-        }
-    ]);
+    const [orders, setOrders] = useState<OrderProps[]>([]);
 
     const { colors } = useTheme();
 
@@ -114,6 +65,17 @@ export function Home() {
                 data={orders}                 
                 keyExtractor={item => item.id}
                 renderItem={({ item }) => <Order data={item}/>}
+                showsVerticalScrollIndicator={false}
+                contentContainerStyle={{ paddingBottom: 100 }}
+                ListEmptyComponent={() => (
+                    <Center>
+                        <ChatTeardropText color={colors.gray[300]} size={40} />
+                        <Text color="gray.300" fontSize="xl" mt={6} textAlign="center">
+                            Você ainda não possui {'\n'}
+                            solicitações
+                        </Text>
+                    </Center>
+                )}
             />
 
 
