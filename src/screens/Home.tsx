@@ -5,17 +5,62 @@ import { SignOut } from 'phosphor-react-native';
 import Logo from '../assets/logo_secondary.svg';
 
 import { Filter } from '../components/Filter';
+import { Button } from '../components/Button';
 import { Order, OrderProps } from '../components/Order';
 
 
 export function Home() {
     const [statusSelected, setStatusSelected] = useState<'open' |'closed'>('open');
-    const [orders, setOrders] = useState<OrderProps[]>([{
-        id: '123',
-        patrimony: '123456',
-        when: '18/07/2022 as 10:00',
-        status: 'open'
-    }]);
+    const [orders, setOrders] = useState<OrderProps[]>([
+        {
+            id: '123',
+            patrimony: '123456',
+            when: '18/07/2022 as 10:00',
+            status: 'open'
+        },
+        {
+            id: '164',
+            patrimony: '654321',
+            when: '02/08/2022 as 16:13',
+            status: 'open'
+        },
+        {
+            id: '131',
+            patrimony: '123456',
+            when: '18/07/2022 as 10:00',
+            status: 'open'
+        },
+        {
+            id: '124',
+            patrimony: '654321',
+            when: '02/08/2022 as 16:13',
+            status: 'open'
+        },
+        {
+            id: '193',
+            patrimony: '123456',
+            when: '18/07/2022 as 10:00',
+            status: 'open'
+        },
+        {
+            id: '174',
+            patrimony: '654321',
+            when: '02/08/2022 as 16:13',
+            status: 'open'
+        },
+        {
+            id: '113',
+            patrimony: '123456',
+            when: '18/07/2022 as 10:00',
+            status: 'open'
+        },
+        {
+            id: '144',
+            patrimony: '654321',
+            when: '02/08/2022 as 16:13',
+            status: 'open'
+        }
+    ]);
 
     const { colors } = useTheme();
 
@@ -71,6 +116,8 @@ export function Home() {
                 renderItem={({ item }) => <Order data={item}/>}
             />
 
+
+            <Button title="Nova solicitação" />
         </VStack>        
     </VStack>
   );
