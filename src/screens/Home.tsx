@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { HStack, VStack, IconButton, useTheme, Text, Heading, Fletlist, FlatList } from 'native-base';
+import { HStack, VStack, IconButton, useTheme, Text, Heading, FlatList } from 'native-base';
 import { SignOut } from 'phosphor-react-native';
 
 import Logo from '../assets/logo_secondary.svg';
