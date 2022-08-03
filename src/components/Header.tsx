@@ -9,7 +9,7 @@ type Props = StyledProps & {
 
 
 /* Heading */
-export function Header() {
+export function Header({ title, ...rest }: Props) {
 
   const { colors } = useTheme();
 
@@ -22,14 +22,15 @@ export function Header() {
         bg="gray.600"
         pb={6}
         pt={12}
+        {...rest}
     >
 
       <IconButton 
         icon={<CaretLeft color={colors.gray[200]} size={24} />}
       />
 
-      <Heading>
-
+      <Heading color="gray.100" textAlign="center" fontSize="lg" flex={1} pl={-6}>
+        {title}
       </Heading>
 
     </HStack>
