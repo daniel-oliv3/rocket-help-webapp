@@ -142,9 +142,12 @@ npm install @react-navigation/native-stack
 ## Firebase.
 - Site - https://firebase.google.com/?hl=pt
 
+## React Native Firebase.
+- Site - https://rnfirebase.io/
 
-
-
+```
+npm install --save @react-native-firebase/app
+```
 
 
 
