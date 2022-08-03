@@ -1,4 +1,4 @@
-package com.rockethelpwebapp;
+package com.sapup3.rockethelp;
 
 import android.os.Build;
 import android.os.Bundle;

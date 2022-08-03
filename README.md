@@ -152,6 +152,20 @@ npm install --save @react-native-firebase/app
 ## Native Firebase SDK.
 - Site https://docs.expo.dev/guides/setup-native-firebase/
 
+- Acrescestar o plugins no arquivo `app.json`.
+
+```js
+"plugins": [
+      "@react-native-firebase/app"
+    ]
+```
+
+### Rodar o Pre-Build.
+```
+expo prebuild
+```
+
+
 ##
 
 
