@@ -5,5 +5,7 @@
 
 
 
-
-/*3*/
+/*{
+  "compilerOptions": {},
+  "extends": "expo/tsconfig.base"
+}*/
