@@ -183,3 +183,4 @@ expo prebuild
   - `Facebook` - https://web.facebook.com/danielsapup3/
   - `Twitter` - https://twitter.com/danielsapup3/
   - `Linkedin` - https://www.linkedin.com/in/danielsapup3/
+  - `Youtube` - https://www.youtube.com/channel/UCEQ_0pFLy4QKTK0UQe8b0ow
