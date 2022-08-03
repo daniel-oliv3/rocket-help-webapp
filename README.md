@@ -139,7 +139,11 @@ npm install @react-navigation/native-stack
 
 ### 4 - Integração com Firebase e finalização.
 
+- 
 
+-
+
+-
 
 
 

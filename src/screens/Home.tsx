@@ -60,10 +60,10 @@ function handleOpenDetails(orderId: string){
         <VStack flex={1} px={6}>
             <HStack w="full" mt={8} mb={4} justifyContent="space-between" alignItems="center">
                 <Heading color="gray.100">
-                    Meus chamados
+                    Solicitações
                 </Heading>
                 <Text color="gray.200">
-                    3
+                    {orders.length}
                 </Text>
             </HStack>
 
