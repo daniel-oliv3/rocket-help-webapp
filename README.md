@@ -149,12 +149,19 @@ npm install @react-navigation/native-stack
 npm install --save @react-native-firebase/app
 ```
 
+## Native Firebase SDK.
+- Site https://docs.expo.dev/guides/setup-native-firebase/
+
+##
 
 
 
 
 
 
+
+
+##
 
 
 - By: **Daniel Oliveira**
