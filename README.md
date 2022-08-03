@@ -122,6 +122,15 @@ npm install --save phosphor-react-native
 
 ### 3 - Estrutura visual e Navegação.
 
+## React Navigation.
+- https://reactnavigation.org/
+
+```
+npm install @react-navigation/native
+```
+```
+expo install react-native-screens
+```
 
 ### 4 - Integração com Firebase e finalização.
 

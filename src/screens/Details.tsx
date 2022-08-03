@@ -1,9 +1,10 @@
-import { HStack } from 'native-base';
+import { VStack } from 'native-base';
+import { Header } from '../components/Header';
 
 export function Details() {
   return (
-    <HStack>
-
-    </HStack>
+    <VStack flex={1} bg="gray.700">
+        <Header title="Solicitação" />
+    </VStack>
   );
 }
