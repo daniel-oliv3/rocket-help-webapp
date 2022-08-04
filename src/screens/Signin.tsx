@@ -6,6 +6,7 @@ import { Envelope, Key } from 'phosphor-react-native';
 
 import Logo from '../assets/logo_primary.svg';
 
+/*Componentes*/
 import { Input } from '../components/Input';
 import { Button } from '../components/Button';
 
@@ -13,6 +14,7 @@ import { Button } from '../components/Button';
 /* SignIn/Entrar */
 export function SignIn(){
 
+    const [isLoading, setIsLoading] = useState(false);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -24,6 +26,15 @@ export function SignIn(){
             return Alert.alert('Entrar', 'Informe e-mail e senha');
         }
 
+        setIsLoading(true);
+
+        auth()
+            .signInWithEmailAndPassword(email, password)
+            .catch((error) => {
+                console.log(error);
+                setIsLoading(false);
+
+        });
     }
 
 
@@ -49,7 +60,12 @@ export function SignIn(){
                 onChangeText={setPassword} 
              />
 
-            <Button title='Entrar' w="full" onPress={handleSignIn} />
+            <Button 
+                title='Entrar' 
+                w="full" 
+                onPress={handleSignIn} 
+                isLoading={isLoading}    
+            />
 
         </VStack>
     )
