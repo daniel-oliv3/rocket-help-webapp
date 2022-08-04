@@ -166,6 +166,30 @@ expo prebuild
 ```
 
 
+- https://rnfirebase.io/firestore/usage
+
+```
+npm i @react-native-firebase/firestore
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##
 
 
