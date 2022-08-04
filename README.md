@@ -177,7 +177,10 @@ npm i @react-native-firebase/firestore
 npm i @react-native-firebase/auth
 ```
 
-
+**Roda o projeto**
+```
+expo run:android
+```
 
 
 
