@@ -173,7 +173,9 @@ npm i @react-native-firebase/firestore
 ```
 
 
-
+```
+npm i @react-native-firebase/auth
+```
 
 
 
